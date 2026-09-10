@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>김종훈 이력서</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; background: #f1f2f5; }
+  a { color: #3452c7; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  h1, h2, h3, h4, h5, h6 { text-wrap: balance; }
+  p, li, blockquote, figcaption { text-wrap: pretty; }
+  .sheet { width: 210mm; min-height: 297mm; margin: 24px auto; background: #fff;
+           box-shadow: 0 2px 16px rgba(0,0,0,.10); }
+  @page { size: A4; margin: 12mm 0 9mm; }
+  @media print {
+    body { background: none; }
+    .sheet { width: auto; min-height: 0; margin: 0; box-shadow: none; }
+    figure, table { break-inside: avoid; }
+  }
+
+  .items { display: flex; flex-direction: column; gap: 11px; }
+  .itm { break-inside: avoid; }
+  .ttl { margin: 0 0 3px; font-size: 15px; font-weight: 700; color: #0f0f23; letter-spacing: -.2px; }
+
+  .sum code { font-family: 'SFMono-Regular', Consolas, monospace; font-size: .88em;
+              background: none; padding: 0; color: inherit; }
+
+  .phdr, .shdr, .ttl { break-after: avoid; page-break-after: avoid; }
+  .itm { break-inside: avoid; page-break-inside: avoid; }
+  @media print {
+    .sheet { padding: 0 !important; }
+  }
+
+
+  /* 두 번째 프로젝트는 새 장에서 시작 */
+  /* 헤더 직함이 두 줄로 쪼개지지 않게 */
+  .hd-role { white-space: nowrap; }
+  /* 마지막 줄에 한두 글자만 남는 것 방지 */
+  .sum, .ttl { text-wrap: balance; }
+
+
+  @media print {
+    section.page { padding: 0 48px !important; gap: 30px !important; }
+    .items { gap: 8px; }
+    .sum { line-height: 1.68; }
+    .r { line-height: 1.46; }
+  }
+  section.page + section.page { break-before: page; page-break-before: always; }
+  .keepnext { break-after: avoid; page-break-after: avoid; text-wrap: pretty; }
+
+  /* 한글 단어가 중간에서 잘리지 않게 — 띄어쓰기 단위로만 줄바꿈 */
+  body, p, span, li, h1, h2, h3, div { word-break: keep-all; overflow-wrap: break-word; }
+
+  .r { display: flex; gap: 7px; font-size: 12.5px; line-height: 1.55; margin: 1px 0; }
+  .k { flex: 0 0 26px; font-size: 9.5px; font-weight: 700; color: #b0b6bf; padding-top: 2px; }
+  .v { flex: 1; color: #6b7280; }
+  .r.out .k { color: #6b7280; }
+  .r.out .v { color: #1f2937; }
+  .v code { font-family: 'SFMono-Regular', Consolas, monospace; font-size: .85em;
+            background: none; padding: 0; color: inherit; }
+  .keepnext, .phdr { break-after: avoid; page-break-after: avoid; }
+  .side > div:first-child, .side > .phdr { break-after: avoid; page-break-after: avoid; }
+
+  .grps { display: flex; flex-direction: column; gap: 15px; }
+  .grp { display: flex; flex-direction: column; gap: 7px; }
+  .glb { margin: 0; font-size: 9.5px; font-weight: 700; letter-spacing: 1.4px;
+         color: #9ca3af; padding-bottom: 3px; border-bottom: 1px solid #eceef3;
+         break-after: avoid; page-break-after: avoid; }
+  @media print { .grps { gap: 11px; } .grp { gap: 5px; } }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  
+
+  <section class="page" style="padding: 52px 52px 40px; font-family: 'Noto Sans KR', sans-serif; color: rgb(26, 26, 46); font-size: 12.5px; line-height: 1.62; display: flex; flex-direction: column; gap: 34px;">
+
+    <header style="display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; padding-bottom: 14px; border-bottom: 2px solid rgb(15, 15, 35);"><div style="display:flex; align-items:flex-end; gap:20px;"><img src="img.png" alt="김종훈 프로필 사진" style="width:124px; height:155px; object-fit:cover; object-position:top; border-radius:4px; border:1px solid #e8eaf0; flex-shrink:0;"><div>
+        <h1 style="font-size: 34px; font-weight: 700; letter-spacing: -0.6px; color: rgb(15, 15, 35); margin: 0px; line-height: 1.1;">김종훈</h1>
+        <p class="hd-role" style="font-size: 15px; font-weight: 500; color: rgb(75, 85, 99); margin: 5px 0px 0px;">백엔드 엔지니어 · Backend Engineer</p>
+      </div></div>
+      <ul style="list-style: none; margin: 0px; padding: 0px; display: grid; grid-template-columns: auto auto; gap: 2px 18px; font-size: 12px; color: rgb(75, 85, 99); text-align: right; justify-items: end;">
+        <li>whdgns4288@naver.com</li>
+        <li>+82 10-8006-4288</li>
+        <li>1996.09.29</li>
+        <li><a href="https://kimjonghun0157.github.io/" target="_blank" rel="noopener noreferrer">kimjonghun0157.github.io</a></li>
+      </ul>
+    </header>
+
+    <div style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; line-height: 1.78; color: rgb(55, 65, 81);">
+      <p style="margin: 0px;">제조 현장에서 사용하는 ERP/MES의 생산·재고·구매 백엔드를 설계하고 운영해온 백엔드 엔지니어입니다. 누적 프로젝트 1,300건과 제품 데이터 9만 건을 다루는 시스템에서 공정 흐름과 서비스 간 데이터 정합성을 개선했습니다.</p>
+      <p style="margin: 0px;">제품의 모듈별 판매와 고객사 확장에 대응해, 단일 DB를 공유하던 시스템을 서비스별 독립 DB 구조로 전환하고 있습니다. 이벤트 기반 동기화와 고객사별 데이터 격리·권한 모델을 설계하며, 운영 중인 시스템을 점진적으로 개선하는 데 강점을 쌓았습니다.</p>
+    </div>
+
+    <section>
+      <h2 class="shdr" style="font-size: 11.5px; font-weight: 700; letter-spacing: 1.6px; color: rgb(107, 114, 128); margin: 0px 0px 8px; padding-bottom: 5px; border-bottom: 1px solid rgb(232, 234, 240);">기술 스택</h2>
+      <div style="display: grid; grid-template-columns: 96px 1fr; gap: 8px 12px; font-size: 12.5px; color: rgb(55, 65, 81);"><div style="font-weight: 700; color: rgb(15, 15, 35);">Backend</div><div>Java · Spring Boot · WebFlux · Spring Batch · JPA/QueryDSL</div><div style="font-weight: 700; color: rgb(15, 15, 35);">Data · Msg</div><div>MySQL · PostgreSQL · MongoDB · Redis/Redisson · Kafka · Debezium CDC</div><div style="font-weight: 700; color: rgb(15, 15, 35);">분산 · 운영</div><div>Spring Cloud Gateway · Consul · 서킷 브레이커 · Micrometer/OpenTelemetry · Prometheus/Grafana · ELK</div><div style="font-weight: 700; color: rgb(15, 15, 35);">DevOps · 품질</div><div>Docker · GitHub Actions · Nginx · JUnit5 · TestContainers · k6/Gatling(부하 테스트)</div></div>
+    </section>
+
+    <section style="display: flex; flex-direction: column; gap: 10px;">
+      <h2 class="shdr" style="font-size: 11.5px; font-weight: 700; letter-spacing: 1.6px; color: rgb(107, 114, 128); margin: 0px; padding-bottom: 5px; border-bottom: 1px solid rgb(232, 234, 240);">경력</h2>
+
+      <div class="keepnext" style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px;">
+        <span style="font-size: 17px; font-weight: 700; color: rgb(15, 15, 35);">우성 오토콘</span>
+        <span style="font-size: 12px; color: rgb(107, 114, 128);">2023.03 ~ 현재</span>
+      </div>
+      <p style="margin: -6px 0px 0px; font-size: 12px; color: rgb(75, 85, 99);">백엔드 엔지니어 · 공장 자동화 설비 및 제조 기간계(수주·생산·재고·구매) 시스템 개발</p>
+
+      <div class="phdr" style="display: flex; align-items: baseline; gap: 10px; background: rgb(244, 246, 251); padding: 6px 10px; margin-top: 2px;">
+        <span style="font-size: 14px; font-weight: 700; color: rgb(15, 15, 35);">ERP/MES 개발·운영</span>
+        <span style="font-size: 11.5px; color: rgb(107, 114, 128);">2023.08 – 2025.04</span>
+      </div>
+
+      <div class="items"><div class="itm"><p class="ttl">수주~출하 통합 업무 시스템(ERP/MES) 설계·구축</p><div class="r"><span class="k">문제</span><span class="v">수주·생산·구매·재고를 엑셀로 수동 관리해 실시간 현황 파악 불가</span></div><div class="r"><span class="k">해결</span><span class="v">생산·재고·구매 모듈의 스키마 설계, BOM을 공정 순서로 전개해 작업지시서·자재 소요량 산출</span></div><div class="r out"><span class="k">결과</span><span class="v">누적 프로젝트 1,300건·제품 데이터 9만 건을 관리하는 ERP/MES 구축·운영</span></div></div><div class="itm"><p class="ttl">공정 변경 시 하위 부품·재고 수량 자동 정산</p><div class="r"><span class="k">문제</span><span class="v">불량 발생 후 공정 복원에 필요한 부품 범위·수량을 수기로 계산해 재고 불일치 발생</span></div><div class="r"><span class="k">해결</span><span class="v">조립 순서·BOM 부품 관계를 그래프로 모델링하고, BFS 경로 탐색·BOM 비율 기반 수량 역산 구현</span></div><div class="r out"><span class="k">결과</span><span class="v">불량 공정·수량·재작업 시작 공정 선택 시, BFS 탐색·BOM 비율 역산으로 관련 부품·공정 수량과 재고를 자동 반영해 수기 계산 제거</span></div></div><div class="itm"><p class="ttl">서비스 간 분산 트랜잭션 정합성 (SAGA)</p><div class="r"><span class="k">문제</span><span class="v">생산·품질·재고가 HTTP로 연동되어 하나의 업무를 단일 트랜잭션으로 처리하기 어려움</span></div><div class="r"><span class="k">해결</span><span class="v">도메인별 멱등한 보상 API로 실패 시 재고 복원. 보상 실패 시 자동 재시도, 실패 기록·알림과 기록 기반 수동 복구로 대응</span></div><div class="r out"><span class="k">결과</span><span class="v">보상 처리로 정합성 유지, 생산·품질·재고 전체 반영 지연 p95 120ms(운영 환경)</span></div></div></div>
+    </section>
+
+  </section><section class="page" style="padding: 52px 52px 40px; font-family: 'Noto Sans KR', sans-serif; color: rgb(26, 26, 46); font-size: 12.5px; line-height: 1.62; display: flex; flex-direction: column; gap: 28px;">
+
+    <div class="phdr" style="display: flex; align-items: baseline; gap: 10px; background: rgb(244, 246, 251); padding: 7px 10px;">
+      <span style="font-size: 15px; font-weight: 700; color: rgb(15, 15, 35);">ERP/MES MSA 전환</span>
+      <span style="font-size: 12px; color: rgb(107, 114, 128);">2025.05 – 현재 · 우성 오토콘</span>
+    </div>
+
+    <div class="grps"><div class="grp"><p class="glb">설계 · 전환</p><div class="items"><div class="itm"><p class="ttl">MSA 전환 제안</p><div class="r"><span class="k">문제</span><span class="v">초기 MSA 도입은 과도한 설계라는 우려로 보류됐으나, 공유 DB로 인한 독립 배포 제약 지속</span></div><div class="r"><span class="k">해결</span><span class="v">1년 반의 운영 비용을 근거로 재제안하고, 파일럿 검증·순차 전환으로 도입 우려 해소</span></div><div class="r out"><span class="k">결과</span><span class="v">모듈 단위 판매 요구를 핵심 근거로 팀 합의 도출, ERP/MES 2.0 도메인 설계 채택</span></div></div><div class="itm"><p class="ttl">MSA 아키텍처 · 서비스 도메인 설계</p><div class="r"><span class="k">문제</span><span class="v">121개 테이블이 단일 DB에 결합되어 스키마 변경 영향과 부하가 서비스 간 전파</span></div><div class="r"><span class="k">해결</span><span class="v">데이터 소유권 기준으로 경계 재설정, 서비스별 독립 DB 분리</span></div><div class="r out"><span class="k">결과</span><span class="v">1년 2개월간 12개 서비스 전환, 스키마 변경이 서비스 내부로 격리</span></div></div><div class="itm"><p class="ttl">SaaS 멀티테넌시 — 회사 경계 도입</p><div class="r"><span class="k">문제</span><span class="v">모듈별 판매에 필요한 고객사 구분이 없고, 사번의 전역 유일성 제약으로 고객사 간 동일 사번 사용 불가</span></div><div class="r"><span class="k">해결</span><span class="v">회사 귀속 테이블에 <code>company_id</code> 추가, 사번 유일성 제약을 (회사, 사번)으로 변경. 게이트웨이에서 서브도메인으로 고객사를 식별해 헤더로 전달</span></div><div class="r out"><span class="k">결과</span><span class="v">고객사별 동일 사번 사용 지원, 기능 플래그로 고객사 식별을 단계 적용해 기존 동작 유지</span></div></div></div></div><div class="grp"><p class="glb">데이터 정합성</p><div class="items"><div class="itm"><p class="ttl">이벤트 아키텍처 구축 및 고도화</p><div class="r"><span class="k">문제</span><span class="v">서비스별 DB 분리 후 원본·복제 데이터 간 불일치 발생 및 감지 어려움</span></div><div class="r"><span class="k">해결</span><span class="v">Outbox·Debezium CDC로 12개 서비스를 동기화하고, Inbox 멱등 처리·원본 버전 비교(LWW)·누락 이벤트 자동 재처리로 중복·순서 역전·유실 문제 개선</span></div><div class="r out"><span class="k">결과</span><span class="v">초당 2,000건 처리 시 동기화 지연 p95 0.44초(QA 부하 테스트)<br><span style="font-size: 11px;">측정 기준: Outbox·소비자 DB에 기록된 처리 시각 차이</span></span></div></div><div class="itm"><p class="ttl">외부 PLM(Vault) 대량 제품 동기화 비동기 전환</p><div class="r"><span class="k">문제</span><span class="v">외부 PLM 응답 지연으로 동기화 요청이 15분간 대기하고 진행 상황 확인 불가</span></div><div class="r"><span class="k">해결</span><span class="v"><code>202 Accepted</code>로 즉시 응답 후 백그라운드 처리, DB Lease 락으로 중복 실행 차단</span></div><div class="r out"><span class="k">결과</span><span class="v">요청 응답 대기 15분 → 접수 응답 17ms, 진행률 조회 제공. DB 반영 30,643건 3.7초</span></div></div></div></div><div class="grp"><p class="glb">플랫폼 공통</p><div class="items"><div class="itm"><p class="ttl">게이트웨이 라우팅 · JWT 로컬 인증 구축</p><div class="r"><span class="k">문제</span><span class="v">요청마다 인증 서버에 토큰 검증을 위임해 지연·장애가 전파</span></div><div class="r"><span class="k">해결</span><span class="v">Spring Cloud Gateway·Consul 라우팅, JWT 로컬 검증·Redis 토큰 폐기 여부 조회, 서비스별 서킷 브레이커 적용</span></div><div class="r out"><span class="k">결과</span><span class="v">요청별 토큰 검증 API 호출을 제거해 인증 서버에 대한 동기 호출 의존 해소</span></div></div><div class="itm"><p class="ttl">기능 단위 권한 모델 · 변경 반영 체계 구축</p><div class="r"><span class="k">문제</span><span class="v">API 경로 기반 권한 설정으로 고객의 기능별 역할 구성이 어렵고, 경로 변경 시 기존 권한 설정에 영향</span></div><div class="r"><span class="k">해결</span><span class="v"><code>@RequiresPermission</code> 기반 역할 구성, Redis 권한 캐시·변경 커밋 후 무효화(TTL 10분). 캐시 미스·조회 실패 시 EMS 조회, 원본 조회도 실패하면 보호 API 접근 거부</span></div><div class="r out"><span class="k">결과</span><span class="v">API 경로와 권한 설정 분리, 고객사별 기능 조합 지원. 권한 회수 반영: 최대 1시간 대기 → 캐시 무효화 후 다음 요청</span></div></div><div class="itm"><p class="ttl">통합 관측성(분산 추적·메트릭·알림) 구축</p><div class="r"><span class="k">문제</span><span class="v">로그 집계(ELK)에만 의존해 장애 발생 시 서비스별 로그를 수동 대조</span></div><div class="r"><span class="k">해결</span><span class="v">추적 ID·메트릭을 공용 라이브러리로 표준화하고 Kafka 구간의 추적 연결 보강</span></div><div class="r out"><span class="k">결과</span><span class="v">장애 시 12개 서비스 요청을 ID 하나로 추적, 서비스별 로그 대조 제거</span></div></div><div class="itm"><p class="ttl">MSA 백엔드 라이브러리 구축</p><div class="r"><span class="k">문제</span><span class="v">서비스별 예외 처리·로깅·HTTP 통신·이벤트 동기화 구현이 중복되어 공통 정책 변경 시 개별 수정 필요</span></div><div class="r"><span class="k">해결</span><span class="v">관심사별 모듈·Spring Boot 자동 설정 구성, compileOnly로 웹·JPA 의존성 전이 제한. 모듈별 버전 관리·GitHub Packages 개별 발행</span></div><div class="r out"><span class="k">결과</span><span class="v">13개 서비스의 예외·HTTP 통신·이벤트 동기화 처리 규격 표준화, 서비스별로 필요한 모듈·버전을 선택해 적용</span></div></div></div></div><div class="grp"><p class="glb">품질 · 배포</p><div class="items"><div class="itm"><p class="ttl">서비스별 자동화 테스트 (유닛 + 통합)</p><div class="r"><span class="k">문제</span><span class="v">외부 인프라 의존 증가로 단위 테스트만으로 실제 연동 구간의 회귀 오류 검증에 한계</span></div><div class="r"><span class="k">해결</span><span class="v">단위 테스트와 TestContainers 기반 Kafka·DB 통합 테스트 구성, 핵심 흐름은 E2E 시나리오로 검증</span></div><div class="r out"><span class="k">결과</span><span class="v">팀과 함께 12개 서비스 900개 테스트 구축, 실제 인프라 연동 구간의 배포 전 검증 기반 마련</span></div></div><div class="itm"><p class="ttl">무중단 배포 파이프라인(GitHub Actions · Blue-Green)</p><div class="r"><span class="k">문제</span><span class="v">수동 SSH 배포로 표준 절차가 부재하고 배포 중 서비스 중단 발생</span></div><div class="r"><span class="k">해결</span><span class="v">공용 워크플로우·Blue-Green 배포 적용, 라우팅 갱신 장애 이후 graceful shutdown 보강</span></div><div class="r out"><span class="k">결과</span><span class="v">승인 한 번으로 12개 서비스 무중단 배포, 1회 4~5분</span></div></div></div></div></div><p style="margin: 6px 0px 0px; font-size: 11px; color: rgb(156, 163, 175); line-height: 1.5; text-wrap: balance;">Spring Boot 4 · Java 25 · Spring Cloud Gateway · Caffeine · Micrometer/OpenTelemetry · Prometheus/Grafana</p>
+    <section class="side" style="border-top: 2px solid rgb(15, 15, 35); padding-top: 16px; display: flex; flex-direction: column; gap: 12px;">
+      <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px;">
+        <span style="font-size: 11.5px; font-weight: 700; letter-spacing: 1.6px; color: rgb(107, 114, 128);">사이드 프로젝트 · 개인/팀</span>
+        <span style="font-size: 11.5px; color: rgb(156, 163, 175);">회사 업무와 별개</span>
+      </div>
+      <div class="phdr" style="display: flex; align-items: baseline; gap: 10px;">
+        <span style="font-size: 15px; font-weight: 700; color: rgb(15, 15, 35);">PickBit</span>
+        <span style="font-size: 11.5px; color: rgb(107, 114, 128);">2026.01 – 2026.05 · 팀 프로젝트 (FE 1 · BE 1) · 백엔드 단일 담당</span>
+        <a href="https://github.com/pickbit-dev" target="_blank" rel="noopener noreferrer" style="font-size: 11.5px; margin-left: auto;">GitHub</a>
+      </div>
+      <p class="keepnext" style="margin: 0px; font-size: 13px; color: rgb(55, 65, 81); line-height: 1.7;">실시간 중고 경매 플랫폼. 동시 입찰·인스턴스 확장을 상정해 8개 서비스 MSA로 설계하고, 다수 사용자가 같은 자원을 두고 경쟁할 때의 정합성을 다뤘습니다.</p>
+      <div class="items"><div class="itm"><p class="ttl">입찰 동시성 제어</p><div class="r"><span class="k">문제</span><span class="v">동일 경매의 동시 입찰로 현재가 갱신·최고가 판정에 충돌 발생</span></div><div class="r"><span class="k">해결</span><span class="v">경매별 분산 락(Redisson)으로 동일 경매의 입찰을 직렬화하고, 서로 다른 경매는 병렬 처리</span></div><div class="r out"><span class="k">결과</span><span class="v">단일 경매에 사용자 3,650명 동시 입찰 시 전체 요청 응답 p95 28ms(Gatling)</span></div></div><div class="itm"><p class="ttl">다중 인스턴스 확장 대응</p><div class="r"><span class="k">문제</span><span class="v">인스턴스 확장 시 WebSocket 알림의 인스턴스 간 전파 누락 및 마감 배치 중복 실행</span></div><div class="r"><span class="k">해결</span><span class="v">Redis Pub/Sub WebSocket 브리지, 마감은 ShedLock으로 단일 실행</span></div><div class="r out"><span class="k">결과</span><span class="v">3개 인스턴스 테스트에서 실시간 알림 전파 및 중복 마감 미발생 확인</span></div></div><div class="itm"><p class="ttl">낙찰~결제·정산 서비스 연동 (Outbox · CDC)</p><div class="r"><span class="k">문제</span><span class="v">낙찰·결제·알림 서비스 분리로 DB 저장과 이벤트 발행을 별도 수행할 때 결제 요청 유실</span></div><div class="r"><span class="k">해결</span><span class="v">낙찰 트랜잭션에 Outbox 이벤트를 함께 기록하고 Debezium CDC로 발행</span></div><div class="r out"><span class="k">결과</span><span class="v">8개 서비스 사이 이중 쓰기 실패 지점 제거</span></div></div></div>
+      <p style="margin: 0px; font-size: 11px; color: rgb(156, 163, 175);">Spring Boot · Kafka · Redis/Redisson · WebSocket · Spring Batch · Gatling</p>
+    </section>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; border-top: 1px solid rgb(232, 234, 240); padding-top: 10px; margin-top: auto;">
+      <div>
+        <p class="shdr" style="margin: 0px 0px 4px; font-size: 11.5px; font-weight: 700; letter-spacing: 1.6px; color: rgb(107, 114, 128);">학력</p>
+        <p style="margin: 0px; font-size: 12.5px;">백석대학교 정보보호학과 학사 · 졸업 <span style="color: rgb(107, 114, 128);">2015.03 – 2021.02</span></p>
+      </div>
+      <div>
+        <p class="shdr" style="margin: 0px 0px 4px; font-size: 11.5px; font-weight: 700; letter-spacing: 1.6px; color: rgb(107, 114, 128);">병역</p>
+        <p style="margin: 0px; font-size: 12.5px;">대한민국 육군 만기전역</p>
+      </div>
+    </div>
+
+  </section>
+</div>
+</body>
+</html>

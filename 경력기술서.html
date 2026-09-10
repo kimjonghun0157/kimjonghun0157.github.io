@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>김종훈 경력기술서</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 14px;
+      color: #1a1a2e;
+      background: #f5f6fa;
+      line-height: 1.72;
+    }
+
+    .page {
+      max-width: 820px;
+      margin: 32px auto;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+      padding: 52px 56px;
+    }
+
+    /* ── Header ── */
+    header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+      padding-bottom: 24px;
+      border-bottom: 2px solid #e8eaf0;
+      margin-bottom: 32px;
+    }
+    .header-left h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #0f0f23;
+    }
+    .header-left .title {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #6b7280;
+      margin-top: 4px;
+    }
+    .doc-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+      color: #4a6cf7;
+      margin-top: 6px;
+    }
+    .portfolio-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #4a6cf7;
+      text-decoration: none;
+    }
+    .portfolio-link:hover { text-decoration: underline; }
+    .term-note {
+      margin-top: 10px;
+      padding: 10px 14px;
+      background: #f3f4f6;
+      border-left: 2px solid #d1d5db;
+      border-radius: 0 6px 6px 0;
+      font-size: 0.78rem;
+      color: #6b7280;
+      line-height: 1.7;
+    }
+    .term-note strong { color: #1a1a2e; font-weight: 600; }
+
+    /* ── Section common ── */
+    section { margin-bottom: 34px; }
+
+    .section-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+      color: #6b7280;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e8eaf0;
+      margin-bottom: 18px;
+    }
+
+    /* ── Chips ── */
+    .chip-wrap { display: flex; flex-wrap: wrap; gap: 6px; }
+    .chip {
+      display: inline-block;
+      padding: 2px 8px;
+      background: #f3f4f6;
+      color: #6b7280;
+      border-radius: 4px;
+      font-size: 0.72rem;
+      font-weight: 500;
+    }
+
+    /* ── Badge ── */
+    .badge {
+      display: inline-block;
+      padding: 2px 9px;
+      border-radius: 20px;
+      font-size: 0.73rem;
+      font-weight: 500;
+    }
+    .badge-blue  { background: #eff2ff; color: #4a6cf7; }
+    .badge-gray  { background: #f3f4f6; color: #6b7280; }
+
+    /* ── Company ── */
+    .company-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 2px;
+    }
+    .company-name { font-size: 1.05rem; font-weight: 700; color: #0f0f23; }
+    .company-period {
+      font-size: 0.8rem;
+      color: #6b7280;
+      white-space: nowrap;
+      margin-top: 3px;
+    }
+    .company-role { font-size: 0.845rem; color: #6b7280; margin-bottom: 22px; }
+    .company-scale { display: block; margin-top: 5px; line-height: 1.7; }
+    .company-scale strong { color: #4b5563; font-weight: 600; }
+
+    /* ── Project ── */
+    .project {
+      margin-bottom: 30px;
+      padding-left: 16px;
+      border-left: 3px solid #e8eaf0;
+    }
+    .project:last-child { margin-bottom: 0; }
+
+    .project-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .project-title { font-size: 0.96rem; font-weight: 700; color: #1a1a2e; }
+    .project-period {
+      font-size: 0.78rem;
+      color: #6b7280;
+      white-space: nowrap;
+      margin-top: 2px;
+    }
+    .project-overview {
+      font-size: 0.845rem;
+      color: #4b5563;
+      line-height: 1.75;
+      margin-bottom: 8px;
+    }
+
+    /* ── Theme label ── */
+    .theme-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #4a6cf7;
+      margin: 22px 0 12px;
+      padding-bottom: 5px;
+      border-bottom: 1px dashed #d9deea;
+    }
+
+    /* ── Sub block ── */
+    .sub { margin-bottom: 18px; }
+    .sub:last-child { margin-bottom: 0; }
+    .sub-title {
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin-bottom: 8px;
+    }
+
+    /* ── 문제 / 접근 / 결과 ── */
+    .par { display: flex; flex-direction: column; gap: 7px; margin-bottom: 8px; }
+    .par-row { display: flex; gap: 10px; align-items: flex-start; }
+    .par-label {
+      flex: 0 0 44px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 3px;
+      padding: 1px 0;
+      margin-top: 2px;
+    }
+    .par-problem  { background: #fef2f2; color: #b91c1c; }
+    .par-approach { background: #eff2ff; color: #4a6cf7; }
+    .par-result   { background: #ecfdf5; color: #059669; }
+    .par-body {
+      flex: 1;
+      font-size: 0.835rem;
+      color: #374151;
+      line-height: 1.68;
+    }
+    .par-body strong { color: #1a1a2e; }
+
+    /* ── Task list ── */
+    .task-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      margin: 4px 0 8px;
+    }
+    .task-list li {
+      font-size: 0.835rem;
+      color: #374151;
+      padding-left: 12px;
+      position: relative;
+      line-height: 1.68;
+    }
+    .task-list li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: #9ca3af;
+    }
+    .task-list li strong { color: #1a1a2e; }
+
+    code {
+      font-family: 'SFMono-Regular', Consolas, monospace;
+      font-size: 0.8em;
+      background: none;
+      padding: 0;
+      border-radius: 3px;
+      color: #374151;
+    }
+
+    .tech-line { margin-top: 12px; }
+
+    /* ── Print ── */
+    @media print {
+      @page { size: A4; margin: 13mm 15mm; }
+      body { background: #fff; }
+      .chip, .badge, code, .par-label {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .page { box-shadow: none; margin: 0; border-radius: 0; padding: 0; max-width: none; }
+      section { margin-bottom: 16px; }
+      header { margin-bottom: 14px; padding-bottom: 14px; }
+      .section-title { margin-bottom: 10px; padding-bottom: 6px; break-after: avoid; }
+      .company-header, .company-role { break-after: avoid; }
+      .project { margin-bottom: 20px; }
+      .project-header { break-inside: avoid; break-after: avoid; }
+      .project-overview { font-size: 0.86rem; line-height: 1.7; }
+      .theme-label { break-after: avoid; margin: 18px 0 10px; }
+      .sub { margin-bottom: 18px; }
+      .sub-title { break-after: avoid; font-size: 0.9rem; }
+      .par { gap: 8px; margin-bottom: 8px; break-inside: avoid; }
+      .par-row { break-inside: avoid; gap: 10px; }
+      .par-body { font-size: 0.86rem; line-height: 1.7; }
+      .task-list { gap: 7px; margin: 6px 0 10px; break-before: avoid; }
+      .task-list li { font-size: 0.86rem; line-height: 1.7; break-inside: avoid; }
+      /* 결과가 페이지 맨 위에 홀로 떨어지지 않게 */
+      .tail { break-inside: auto; }
+    }
+
+    @media (max-width: 640px) {
+      .page { padding: 28px 24px; margin: 0; border-radius: 0; }
+      header { flex-direction: column; }
+      .par-row { flex-direction: column; gap: 4px; }
+      .par-label { flex: none; width: 44px; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ── Header ── -->
+  <header>
+    <div class="header-left">
+      <h1>김종훈</h1>
+      <p class="title">백엔드 엔지니어 · Backend Engineer</p>
+      <p class="doc-label">경력기술서</p>
+      <a href="https://kimjonghun0157.github.io/" target="_blank" rel="noopener noreferrer" class="portfolio-link">kimjonghun0157.github.io</a>
+    </div>
+  </header>
+
+  <!-- ── 경력 ── -->
+  <section id="career">
+    <div class="company-header">
+      <span class="company-name">우성 오토콘</span>
+      <span class="company-period">2023.03 ~ 현재</span>
+    </div>
+    <p class="company-role">백엔드 엔지니어 · 공장 자동화 설비 및 제조 업무 시스템 개발<span class="company-scale">수주부터 생산·재고·구매·출하까지 연결된 ERP/MES를 약 2년간 사내 핵심 업무 시스템으로 운영·고도화했습니다. 누적 약 1,300개 프로젝트와 5,000여 건의 판매·출하 아이템을 관리하고, 약 9만 건의 제품 데이터를 기반으로 월 약 2,000건의 생산실적을 처리합니다.</span></p>
+    <p class="term-note">※ 제조 용어 — MES 제조실행시스템 · BOM 제품을 이루는 부품·수량 목록 · 작업지시 무엇을 몇 개 만들라는 생산 지시</p>
+
+    <!-- ══ 프로젝트 1 — ERP/MES 개발·운영 ══ -->
+    <div class="project">
+      <div class="project-header">
+        <span class="project-title">ERP/MES 개발·운영</span>
+        <span class="project-period">2023.08 – 2025.04</span>
+      </div>
+      <p class="project-overview">
+        단일 MySQL 기반 6개 모듈 구조의 자사 ERP/MES 시스템을 구축하고 약 2년간 운영·고도화했습니다.
+      </p>
+
+      <div class="sub">
+        
+        <div class="tail">
+          <p class="sub-title">수주~출하 통합 업무 시스템(ERP/MES) 설계·구축</p>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-problem">문제</span><span class="par-body">사내 수주·생산·구매 업무가 수동 엑셀로 관리되어 실시간 재고·공정 현황을 파악할 수 없었고, 부서마다 집계 수치가 달라지는 상황이었습니다. 이를 처음으로 전산화하면서 복잡한 생산 공정과 재고 데이터의 실시간 흐름을 정합성 있게 맞추어 시스템화해야 했습니다.</span></div>
+          <div class="par-row"><span class="par-label par-approach">접근</span><span class="par-body">수주부터 생산·구매·재고·출하로 이어지는 전체 흐름과 단일 MySQL 스키마를 설계하고, 그중 생산·재고·구매 및 공통 마스터 도메인 구현을 주도했습니다. 수주가 확정되면 해당 품목의 BOM(Bill of Materials)을 실제 생산 라인의 공정 라우팅으로 전개해 하위 생산 지시서와 필요한 자재 소요량을 자동 산출하는 알고리즘을 구현했습니다. 재고는 원자재 입고(구매) → 공정 투입·반제품 생산 → 완제품 입고 → 최종 출하까지 단계별 재고 변동 트랜잭션으로 설계해, 공정 간 수량이 어긋나지 않도록 정합성 규칙을 잡았습니다.</span></div>
+          <div class="par-row"><span class="par-label par-result">결과</span><span class="par-body">수동 엑셀 관리를 대체하는 사내 핵심 단일 플랫폼으로 정착시켜, 부서별로 갈리던 재고·공정 수치를 하나의 시스템에서 보도록 만들었습니다. 이후 약 2년간 직접 운영·고도화하며 실제 업무 요구를 반영했습니다.</span></div>
+        </div>
+        </div>
+      </div>
+
+      <div class="sub">
+        <p class="sub-title">공정 변경 시 하위 부품·재고 수량 자동 정산</p>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-problem">문제</span><span class="par-body">생산 중 불량이 발생하면 어느 공정까지 되돌려 재작업할지를 담당자가 그때그때 판단했습니다. 공정이 순서대로만 이어진 것이 아니라 BOM 계층에 따라 하위 부품 공정이 상위 조립 공정에 물려 있는 구조라, 하위 부품 하나의 불량이 상위 조립품 수량에 어떻게 반영돼야 하는지가 사람마다 달랐고 그 결과 공정별 진행 수량이 서로 어긋났습니다.<br><br>되돌린 뒤 판정을 취소하는 경우는 더 문제였습니다. 전파된 수량을 일일이 수기로 되돌려야 해서 원복이 정확하지 않았고, 한 번 어긋난 수량은 이후 공정 진행률과 재고에까지 계속 영향을 줬습니다.</span></div>
+        </div>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-approach">접근</span><span class="par-body">공정 순서와 BOM 부품 관계를 하나의 그래프로 모델링하고, BFS로 처리 대상 경로를 탐색하도록 설계했습니다. 처리·취소·폐기는 같은 경로 탐색 로직을 공유하되 수량 반영 방향과 범위를 구분했습니다.</span></div>
+        </div>
+        
+        <div class="tail">
+          <ul class="task-list">
+          <li>라우팅 그래프 정의 — 공정 순서(prev·next)와 BOM 계층(parent·children)을 하나의 그래프 간선으로 통합해, 두 축이 섞인 구조에서도 공정 간 이동 경로를 탐색할 수 있게 했습니다.</li>
+          <li>재작업 경로 탐색 — 불량이 발생한 공정에서 재작업을 시작할 공정까지 BFS로 최단 경로를 구하고, 그 경로에 속한 공정에만 불량 수량을 전파하도록 했습니다. 전파 시 BOM 소요량 배수를 곱해 상·하위 수량을 환산했습니다.</li>
+          <li>처리·취소·폐기 3경로 통합 — 처리는 정방향 탐색, 취소는 동일 경로를 역방향으로 되짚어 수량을 되돌리는 역연산, 폐기는 최초 공정까지 전 구간을 되돌리는 특수 케이스로 두어, 세 경로가 같은 탐색 로직을 공유하게 했습니다.</li>
+          <li>후속 업무 연계 — 불량 판정이 불량 작업지시 생성과 불량품 창고 이동까지 이어지도록 재고 변동 트랜잭션과 연결하고, 이미 작업지시가 내려간 불량은 취소를 막아 되돌릴 수 없는 상태를 사전에 차단했습니다.</li>
+        </ul>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-result">결과</span><span class="par-body">사용자가 불량 공정·수량·재작업 시작 공정을 선택하면, 공정·부품 관계 그래프를 BFS로 탐색하고 BOM 소요량 비율로 수량을 역산해 관련 부품·공정의 수량과 재고를 자동 반영하도록 했습니다. 이를 통해 담당자가 영향 범위와 수량을 개별 계산하던 업무를 시스템에서 처리하고, 모든 공정의 재작업·취소 수량 계산을 자동화했습니다. 취소 시에는 동일 경로에 반영된 수량을 역연산으로 복원해 공정 진행률과 재고가 함께 갱신되도록 했습니다.</span></div>
+        </div>
+        </div>
+      </div>
+
+      <div class="sub">
+        <p class="sub-title">서비스 간 분산 트랜잭션 정합성 (SAGA)</p>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-problem">문제</span><span class="par-body">생산·품질·재고가 별도 모듈로 배포되면서 한 업무가 세 도메인을 HTTP로 오가게 됐습니다. 단일 MySQL을 쓰고 있었지만 호출이 프로세스 경계를 넘는 순간 하나의 트랜잭션으로 묶을 수 없었고, 중간 단계에서 실패하면 앞 단계에서 이미 반영한 수량만 남아 도메인 사이 수치가 어긋났습니다.</span></div>
+          <div class="par-row"><span class="par-label par-approach">접근</span><span class="par-body">분산 트랜잭션 코디네이터를 두는 대신, 각 도메인이 자기 변경을 되돌리는 보상 API를 제공하고 호출한 쪽이 실패 시 역순으로 보상을 호출하는 방식으로 설계했습니다.</span></div>
+        </div>
+        
+        <div class="tail">
+          <ul class="task-list">
+          <li>보상 API 규약 통일 — 도메인마다 제각각이던 되돌리기 방식을 &lt;업무 키 + 되돌릴 수량&gt; 형태의 보상 API로 통일해, 호출하는 쪽이 상대 도메인의 내부 구현을 몰라도 되돌릴 수 있게 했습니다.</li>
+          <li>다시 돌려도 안전하게 — 보상 요청에 업무 키를 함께 넘겨, 같은 요청이 두 번 들어와도 이미 되돌린 건은 건너뛰도록 했습니다. 네트워크 실패로 재시도해도 수량이 두 번 깎이지 않습니다.</li>
+          <li>실패 지점별 보상 경로 — 생산 실적 등록이 실패하면 앞서 차감한 재고를 되돌리고, 품질 판정이 실패하면 생산 실적까지 함께 되돌리도록 단계별 보상 경로를 정의했습니다.</li>
+          <li>보상 실패 대응 — 보상 API 호출 실패 시 자동 재시도하고, 실패 기록을 남겨 알림을 전달했습니다. 자동 재시도로 해결되지 않은 건은 해당 기록을 바탕으로 수동 복구해, 보상 호출 자체의 실패에도 후속 대응이 가능하도록 운영했습니다.</li>
+        </ul>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-result">결과</span><span class="par-body">중간 단계의 실패에는 보상 처리로 대응했습니다. 별도로 운영 환경에서 생산·품질·재고 3개 도메인에 모두 반영되기까지의 지연을 측정해 p95 120ms를 확인했습니다. 이 수치는 실패 후 보상 처리 시간이 아닙니다.</span></div>
+        </div>
+        </div>
+      </div>
+
+      <div class="chip-wrap tech-line">
+        <span class="chip">Spring Boot 3.2 · Java 21</span>
+        <span class="chip">JPA · QueryDSL</span>
+        <span class="chip">MySQL</span>
+        <span class="chip">멀티 모듈</span>
+      </div>
+    </div>
+
+    <!-- ══ 프로젝트 2 — ERP/MES MSA 전환 ══ -->
+    <div class="project">
+      <div class="project-header">
+        <span class="project-title">ERP/MES MSA 전환</span>
+        <span class="project-period">2025.05 – 현재</span>
+      </div>
+      <p class="project-overview">
+        모놀리식의 도메인 결합도를 해소하고 독립 배포·확장성을 확보하기 위해, 도메인·공통 서비스를 포함한 12개 서비스 구조로 점진적으로 전환했습니다. 서비스 분리 설계부터 이벤트 동기화·게이트웨이·공통 라이브러리·배포 자동화까지 플랫폼 전반을 담당했습니다.
+      </p>
+
+      <p class="theme-label">설계 · 전환</p>
+
+      <div class="sub">
+<p class="sub-title">MSA 전환 제안</p>
+<div class="par"><div class="par-row"><span class="par-label par-problem">문제</span><span class="par-body">초기 MSA 도입 제안은 과도한 설계와 운영 복잡도에 대한 우려로 보류됐습니다. 이후 단일 DB를 공유하는 구조로 운영하면서 스키마 변경의 영향 범위와 서비스 간 배포 순서 조율이 반복적인 부담이 됐습니다.</span></div><div class="par-row"><span class="par-label par-approach">접근</span><span class="par-body">1년 반의 운영 경험과 모듈 단위 판매 요구를 근거로 전환을 재제안했습니다.</span></div></div>
+<ul class="task-list"><li>전환 필요성 설명 — 서비스별 데이터 소유권과 배포 단위를 분리해야 하는 이유를 실제 운영 제약 및 제품의 모듈별 판매 방향과 연결했습니다.</li><li>단계적 도입 — 공통 인프라를 구축하고 연차관리 파일럿을 검증한 뒤 핵심 도메인으로 순차 확장하는 방식으로 도입 부담을 낮췄습니다.</li></ul>
+<div class="par"><div class="par-row"><span class="par-label par-result">결과</span><span class="par-body">팀 합의로 ERP/MES 2.0의 MSA 전환 설계가 채택됐습니다. 운영 복잡도 증가는 공통 라이브러리·관측성·동기화 체계로 관리하는 방향을 함께 정했습니다.</span></div></div>
+</div>
+
+      <div class="sub">
+        <p class="sub-title">MSA 아키텍처 · 서비스 도메인 설계</p>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-problem">문제</span><span class="par-body">기존 시스템은 단일 MySQL을 공유하면서 애플리케이션만 여러 모듈로 쪼개진 '분산 모놀리스' 구조였습니다. 121개 테이블에 명확한 도메인 경계가 없다 보니 여러 모듈이 같은 데이터를 직접 참조했고, 한 도메인의 스키마 변경이 전체 모듈로 전파되어 독립 배포가 불가능했습니다.<br><br>특히, 단일 DB를 공유함에도 불구하고 각각의 분산 서버들이 서로 네트워크로 통신하는 형태였기 때문에, 단일 DB의 로컬 트랜잭션 이점을 전혀 살리지 못하고 매 연동마다 수동으로 보상 트랜잭션을 구축해야 하는 구조적 모순이 존재했습니다. 이로 인해 서비스 간 호출 중 락 대기가 발생하고, 일부 처리만 반영되는 정합성 위험을 별도로 관리해야 했습니다.</span></div>
+          <div class="par-row"><span class="par-label par-approach">접근</span><span class="par-body">서비스 간 연동 방식·분산 인프라·전환 전략을 세 축으로 설계했습니다.</span></div>
+        </div>
+        <ul class="task-list">
+          <li>기술 비교 분석 및 아키텍처 수립 — 동기 API 조합, 메시지 큐(Kafka·RabbitMQ 등)에 직접 발행, Outbox + CDC 비동기 복제 3가지 대안의 트레이드오프를 비교 분석해 최적의 정합성 확보안을 결정했습니다.</li>
+          <li>분산 인프라 기획 — 동적 서비스 디스커버리와 부하 분산을 위해 Spring Cloud Gateway와 Consul을 진입점로 선정해 지연 전파·라우팅 복잡도를 제어했습니다.</li>
+          <li>점진적 전환 전략 — 분산 인프라 구축·관리 복잡도를 최소화하기 위해, 사내 시스템의 근간이 되는 직원 도메인을 중심으로 공통 인프라를 먼저 다진 뒤, 결합도가 낮은 연차관리 도메인을 파일럿으로 이관해 아키텍처 안정성을 선제 검증하고 핵심 도메인으로 순차 확장했습니다.</li>
+        </ul>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-result">결과</span><span class="par-body">차세대 MSA 전환(ERP/MES 2.0) 아키텍처 설계를 주도해 전사 도메인 설계 표준으로 채택됐고, 12개 서비스 구조로의 전환을 진행하며 기획·설계부터 개발·테스트·무중단 배포까지 전 주기를 책임졌습니다. 배포 독립성과 장애 격리를 얻는 대가로 서비스 간 연동 복잡도와 운영 관리 포인트가 늘어난다는 점은 전환을 결정할 때부터 감수한 비용이었고, 이후 구축한 정합성 스택·통합 관측성·공통 라이브러리가 그 비용을 상쇄하기 위한 수단이었습니다.</span></div>
+        </div>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-problem">문제</span><span class="par-body">프로젝트·아이템·재고가 하나의 MySQL 스키마를 공유해, 같은 엔티티를 여러 부서가 서로 다른 관점으로 사용했습니다. 이 때문에 컬럼·테이블 구조를 조금만 바꿔도 무관한 기능까지 영향이 전파돼 장애가 났고, 특정 화면의 쿼리 부하가 커지면 전체 DB의 처리 성능이 저하되는 병목이 반복됐습니다.</span></div>
+          <div class="par-row"><span class="par-label par-approach">접근</span><span class="par-body">업무 조율로 서비스 경계를 확정하고, 물리 DB 분리와 통신 방식을 이원화했습니다.</span></div>
+        </div>
+        
+        <div class="tail">
+          <ul class="task-list">
+          <li>업무 조율을 통한 서비스 경계 확정 — 생산·구매·재고 현업 및 기획 부서와 업무 규칙·요구사항을 반복 조율하여 각 서비스가 독자적으로 관리할 데이터 범위와 호출 기준을 정의했습니다.</li>
+          <li>물리 DB 분리 및 통신 방식 이원화 — 얽혀 있던 마스터 데이터(직원·품목 등)의 결합을 끊기 위해 독립 스키마 구조로 DB를 분리하고, 이후에는 데이터 성격에 따라 실시간성이 필요한 데이터는 동기 API 조합으로, 실시간성이 덜하고 부하 격리가 중요한 재고 등의 도메인은 비동기 이벤트 복제 방식으로 분배해 설계했습니다.</li>
+        </ul>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-result">결과</span><span class="par-body">서비스마다 독자적인 관점의 모델을 갖게 해 스키마 변경의 전파를 막고 특정 도메인의 부하가 전체로 번지는 경로를 차단했으며, 개별 마이크로서비스가 다른 서비스의 영향 없이 독립적으로 개발되고 무중단 배포될 수 있는 기반을 확립했습니다.</span></div>
+        </div>
+        </div>
+      </div>
+
+      <div class="sub">
+<p class="sub-title">SaaS 멀티테넌시 — 회사 경계 도입</p>
+<div class="par"><div class="par-row"><span class="par-label par-problem">문제</span><span class="par-body">모듈 단위 판매와 고객사 확장에 대응해야 했지만 기존 데이터에는 회사 구분이 없었고, 사번의 전역 유일성 제약으로 서로 다른 고객사가 같은 사번을 사용할 수 없었습니다.</span></div><div class="par-row"><span class="par-label par-approach">접근</span><span class="par-body">데이터와 요청 흐름에 고객사 식별 기준을 추가하고 기존 서비스 동작을 유지하며 단계 적용했습니다.</span></div></div>
+<ul class="task-list"><li>데이터 경계 — 회사 귀속 테이블에 company_id를 추가하고 사번 유일성 제약을 회사·사번 조합으로 변경했습니다. 고객사 구분이 필요한 조회와 권한 처리에 회사 기준을 적용했습니다.</li><li>요청 경계 — 게이트웨이에서 서브도메인으로 고객사를 식별해 헤더로 전달하고, 고객사 식별 기능은 플래그로 단계 적용했습니다.</li></ul>
+<div class="par"><div class="par-row"><span class="par-label par-result">결과</span><span class="par-body">고객사 간 동일 사번 사용을 지원하고 데이터·권한 처리에 회사 경계를 도입했습니다. 기존 동작을 유지하면서 여러 고객사가 사용하는 제품 구조로 전환할 기반을 마련했습니다.</span></div></div>
+</div>
+
+      <p class="theme-label">데이터 정합성</p>
+
+      <div class="sub">
+<p class="sub-title">이벤트 아키텍처 구축 및 고도화</p>
+<div class="par"><div class="par-row"><span class="par-label par-problem">문제</span><span class="par-body">서비스별 DB를 분리한 뒤 프로젝트·품목·재고 등 공통 참조 데이터의 변경을 다른 서비스에 전달해야 했습니다. DB 저장과 브로커 발행을 별도 처리하면 한쪽만 성공할 수 있어, 유실·중복·순서 역전에 대응할 동기화 체계가 필요했습니다.</span></div><div class="par-row"><span class="par-label par-approach">접근</span><span class="par-body">Outbox·Debezium CDC로 12개 서비스의 데이터를 동기화하고, 운영 중 발생한 중복·순서 역전·유실에 각각 Inbox 멱등 처리·최신값 우선(LWW) 판정·누락 이벤트 자동 복구를 적용했습니다.</span></div></div>
+<ul class="task-list"><li>이중 쓰기 제거 — 업무 변경과 Outbox 이벤트를 같은 DB 트랜잭션에 저장하고, Kafka Connect의 Debezium CDC가 변경을 감지해 Kafka에 발행하도록 구성했습니다.</li><li>중복·순서 대응 — Inbox의 eventId를 업무 반영과 함께 기록해 중복 처리를 방지했습니다. aggregateId를 메시지 키로 사용해 같은 엔티티의 이벤트를 같은 파티션으로 보내고, 버전 가드는 이벤트의 sourceVersion과 복제본에 마지막으로 반영한 원본 버전을 비교해, 두 값이 존재하고 이벤트 버전이 작거나 같으면 반영을 건너뜁니다. 버전이 없는 구형 이벤트는 하위 호환을 위해 반영을 허용합니다.</li><li>정합성 복구 — Outbox 이벤트와 Inbox 성공 기록을 대조해 미처리 이벤트를 탐지하고 핸들러로 재처리합니다. 재처리 실패 시 HEAL_FAILED 상태와 오류 내용을 복구 결과에 남기고 오류 로그를 기록해, 복구 성공과 실패를 구분하도록 했습니다.</li></ul>
+<div class="par"><div class="par-row"><span class="par-label par-result">결과</span><span class="par-body">QA 부하 테스트에서 초당 2,000건 처리 시 동기화 지연 p95 0.44초를 확인했습니다. 지연은 Outbox DB와 소비자 DB에 기록된 처리 시각의 차이로 측정했습니다. 이는 QA 환경의 성능 측정 결과이며, 운영 중 정합성 문제를 개선한 경험과 구분됩니다.</span></div></div>
+</div>
+
+      <div class="sub">
+        <p class="sub-title">외부 PLM(Vault) 대량 제품 동기화 비동기 전환</p>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-problem">문제</span><span class="par-body">PLM 시스템의 제품·BOM을 MES로 동기화하는 배치를 MSA로 이관하는 과정이었습니다. 2개월 구간 기준 노드 10,613건·엣지 25,079건 규모인데, 기존 구현은 컨트롤러가 동기화 완료까지 HTTP 요청을 붙잡는 동기 구조였습니다. 응답 시간이 곧 작업 시간이라 리버스 프록시 타임아웃에 걸리면 서버는 계속 실행 중인데 클라이언트는 성공 여부조차 알 수 없었고, 컨트롤러에 트랜잭션이 걸려 있어 외부 API 응답 대기 내내 DB 커넥션과 행 락을 점유했습니다.<br><br>여기에 더해 BOM 링크 중복 탐지가 선형 탐색으로 O(n²)였고(엣지 2.5만 건 기준 약 3.1억 회 비교), 시퀀스 채번이 건별로 설정돼 INSERT마다 DB 왕복이 3회씩 발생했으며, JDBC 배치 설정은 YAML 계층 오류로 바인딩되지 않아 무효 상태였습니다. 무엇보다 단계별 계측 수단이 없어 느리다는 것은 알지만 어디가 느린지 특정할 수 없었습니다.</span></div>
+        </div>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-approach">접근</span><span class="par-body">응답과 작업을 분리하고, 개선 효과를 검증할 수 있도록 계측 체계를 함께 세웠습니다.</span></div>
+        </div>
+        <ul class="task-list">
+          <li>비동기 전환 — 요청은 락 획득과 실행 이력 생성까지만 처리하고 <code>202 Accepted</code>와 실행 ID를 즉시 반환한 뒤, 실제 처리는 백그라운드에서 수행하고 클라이언트는 실행 ID로 상태를 폴링하도록 분리했습니다.</li>
+          <li>실행 이력 도입 — 실행별 상태·단계별 소요·처리 건수·실패 사유를 테이블에 적재해, 실패해도 어느 페이지에서 왜 멈췄는지 사후에 확인할 수 있게 했습니다.</li>
+          <li>트랜잭션 경계 재설계 — 서버 사이드 페이징을 도입해 페이지 단위 트랜잭션으로 분리하고, 외부 HTTP 호출을 트랜잭션 밖으로 옮겨 커넥션·락 점유 시간을 처리 구간으로 한정했습니다.</li>
+          <li>중복 실행 방지 — 인스턴스 로컬 플래그를 DB lease 락(30분)으로 교체하고 페이지마다 소유권을 갱신해, 다중 인스턴스에서 안전하면서 프로세스 장애 시 자동 복구되도록 했습니다.</li>
+          <li>성능 — 중복 탐지 자료구조를 해시 기반으로 교체해 O(n²)→O(n)으로 낮추고, 시퀀스 풀링(50)과 JDBC 배치(500)·정렬 삽입을 적용했습니다.</li>
+          <li>정합성 — 저장 루프에 흩어져 있던 검증을 전용 계층으로 분리하고(아이템 / BOM / 그래프 순환 참조), 반려 사유를 유형별로 분류해 적재했습니다.</li>
+        </ul>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-result">결과</span><span class="par-body">기존에는 작업 완료까지 약 15분 9초 동안 HTTP 요청이 대기했으나, 비동기 전환 후 접수 응답(202 Accepted)은 측정 시 17ms였습니다. 실제 동기화는 백그라운드에서 계속 수행하고 진행 상태를 별도로 조회하도록 했습니다. DB 반영은 30,643행을 3.7초(초당 8,300행, 순수 저장 구간 기준 11,100행/초)에 처리했고, 단일 페이지 최대 15,460행을 1.5초에 넣었습니다. 검증 실패 데이터 873건(아이템 81 / BOM 792)은 사유별로 적재되어, 기존에 조용히 폐기되던 유실을 가시화했습니다.</span></div>
+        </div>
+        <ul class="task-list">
+          <li>계측을 통한 병목 규명 — 단계별 계측 결과 전체 소요의 99.6%가 외부 API 조회 구간(15분 9초 중 15분 6초)이고 DB 구간은 0.41%에 불과함을 확인했습니다. 외부 API 응답이 요청 건수와 무관하게 27~258초로 8배 편차를 보이며(건수가 2배 많은 페이지가 8배 빠른 사례), 종료 감지용 빈 응답 1회에만 27.7초가 소요되는 것도 함께 규명했습니다.</li>
+          <li>개선 방향 전환 — DB 최적화 효과는 확보했으나 전체의 0.4%에 불과해 체감 개선으로 이어지지 않는다는 점을 데이터로 확인하고, 추가 DB 튜닝 대신 외부 API 호출 횟수 감축과 실패 복원력 확보로 방향을 전환하는 근거를 마련했습니다.</li>
+        </ul>
+      </div>
+
+      <p class="theme-label">플랫폼 공통</p>
+
+      <div class="sub">
+<p class="sub-title">게이트웨이 라우팅 · JWT 로컬 인증 구축</p>
+<div class="par"><div class="par-row"><span class="par-label par-problem">문제</span><span class="par-body">서비스별 인스턴스를 동적으로 연결할 공통 진입점이 필요했습니다. 초기 게이트웨이는 요청마다 인증 서버의 토큰 검증 API를 호출해 인증 서버의 지연·장애에 영향을 받았습니다.</span></div><div class="par-row"><span class="par-label par-approach">접근</span><span class="par-body">Spring Cloud Gateway와 Consul로 라우팅을 구성하고, 토큰 검증을 게이트웨이로 옮겼습니다.</span></div></div>
+<ul class="task-list"><li>동적 라우팅 — Consul에 등록된 서비스 정보를 바탕으로 라우트를 구성하고, 서비스별 서킷 브레이커와 폴백을 적용했습니다.</li><li>JWT 로컬 검증 — 게이트웨이가 JWT의 서명·만료·발급자를 직접 검증하도록 구현해 인증 서버에 매번 검증을 위임하던 호출을 제거했습니다.</li><li>폐기 토큰 확인 — 로그아웃·강제 만료된 토큰은 공유 Redis의 denylist로 확인합니다. 따라서 인증 서버의 검증 API 호출은 없어졌지만 Redis 조회는 유지됩니다. 사용자별 권한 조회는 다음 항목의 별도 인가 흐름으로 처리합니다.</li></ul>
+<div class="par"><div class="par-row"><span class="par-label par-result">결과</span><span class="par-body">서비스 탐색·라우팅을 게이트웨이에서 공통 처리하고, 요청별 토큰 검증 API 호출 의존을 제거했습니다. 서킷 브레이커는 서비스별 라우트에 적용해 장애 응답에 대한 폴백을 제공하도록 구성했습니다.</span></div></div>
+</div>
+
+
+      <div class="sub">
+<p class="sub-title">기능 단위 권한 모델 · 변경 반영 체계 구축</p>
+<div class="par"><div class="par-row"><span class="par-label par-problem">문제</span><span class="par-body">초기 권한 모델은 API 경로를 역할에 연결하는 방식이어서 고객사 관리자가 기능 단위로 권한을 구성하기 어려웠고, 경로 변경이 기존 권한 설정에 영향을 줬습니다. 역할을 JWT에 담아 권한 회수도 토큰 만료까지 최대 1시간 지연됐습니다.</span></div><div class="par-row"><span class="par-label par-approach">접근</span><span class="par-body">기능 권한 선언과 고객사별 역할 구성을 분리하고, 사용자 권한을 요청 시점에 조회하도록 변경했습니다.</span></div></div>
+<ul class="task-list"><li>초기 구조의 개선 — 요청 시 AOP로 권한을 등록하던 방식을 기동 시 스캔으로 바꿨고, 이후 경로 기반 모델을 기능 권한 선언 방식으로 재설계했습니다.</li><li>권한 선언·수집 — API는 @RequiresPermission으로 기능 권한을 선언하고 고객사는 이를 조합해 역할을 구성합니다. 서비스별 permission manifest를 내부 API로 제공하고 EMS가 조회·동기화하도록 해 API 경로와 역할 설정의 결합을 줄였습니다.</li><li>내부 API 구분 — @InternalApi로 서비스 간 전용 API를 표시하고 게이트웨이에서 외부 접근을 차단합니다.</li><li>권한 조회·무효화 — 게이트웨이는 공유 Redis를 조회하고 유효한 캐시가 없으면 EMS에서 최신 권한을 가져옵니다. 역할·사용자 권한 변경 트랜잭션이 커밋된 뒤 관련 캐시를 삭제합니다. 로컬 권한 캐시는 두지 않아 별도 로컬 TTL로 인한 반영 지연을 피했습니다.</li><li>실패 처리 — Redis 조회 실패 시 EMS를 직접 조회하고, 원본 조회도 실패하면 보호 API 접근을 거부합니다. 캐시 삭제 실패 시 기존 값은 최대 10분의 TTL로 만료되며, 권한 변경 자체는 롤백하지 않습니다.</li></ul>
+<div class="par"><div class="par-row"><span class="par-label par-result">결과</span><span class="par-body">고객사가 기능 단위로 역할을 구성하고, API 경로를 바꿔도 같은 기능 권한을 유지할 수 있게 됐습니다. 권한 회수는 토큰 만료 대기에서 캐시 무효화 후 다음 요청부터 반영하는 방식으로 전환했습니다. 역할·권한 저장소를 SQL로 통합해 관련 변경을 단일 트랜잭션으로 처리했습니다.</span></div></div>
+</div>
+
+      <div class="sub">
+        <p class="sub-title">통합 관측성(분산 추적·메트릭·알림) 구축</p>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-problem">문제</span><span class="par-body">기존 모놀리스와 달리 여러 마이크로서비스로 분리되자, 하나의 비즈니스 요청이 여러 서버를 거치며 생성되는 로그가 파편화됐습니다. 장애가 발생하면 지점과 원인을 파악하기 위해 각 서비스 서버에 개별 접속해 타임스탬프와 로그를 수동으로 대조하는 극심한 비효율이 있었습니다. 또한 각 마이크로서비스의 CPU·메모리·DB 커넥션 풀 등 메트릭은 게이트웨이를 제외하고는 수집·시각화되지 않아 버려지고 있었습니다.</span></div>
+        </div>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-approach">접근</span><span class="par-body">각 서비스 담당자가 개별로 모니터링 코드를 짜지 않도록, 추적·메트릭 노출을 공용 라이브러리로 표준화하고 비동기 구간까지 추적을 관통시켰습니다.</span></div>
+        </div>
+        
+        <div class="tail">
+          <ul class="task-list">
+          <li>추적·관측성의 표준화 — OpenTelemetry 표준과 Micrometer를 적용한 공용 통합 관측성 라이브러리를 직접 구축해, 각 서비스가 의존성 하나만 추가하면 자동으로 추적 지표를 노출하도록 표준화했습니다.</li>
+          <li>분산 추적(Distributed Tracing) 설계 — HTTP 통신 구간뿐 아니라 비동기 이벤트 구간(HTTP → Outbox → CDC → Kafka → Consumer 소비)까지 동일한 traceId가 Context Propagation으로 끊기지 않고 유지되도록, Kafka 메시지 헤더 주입과 수신 컨슈머 인터셉터 로직을 설계했습니다.</li>
+          <li>지표 시각화 및 경보 체계 연결 — 전 서비스가 노출하는 메트릭을 Prometheus로 실시간 수집(Pull)하고 Grafana 대시보드에 통합 시각화했으며, 임계치를 초과하는 이상 징후는 Slack 채널로 즉시 알람이 발송되도록 파이프라인을 연결했습니다.</li>
+        </ul>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-result">결과</span><span class="par-body">장애 발생 시 traceId 하나만 검색하면 여러 서비스에 걸친 동기·비동기 전체 요청 흐름을 한눈에 파악할 수 있게 되어, 서비스별 로그를 시간대로 수동 대조하던 과정을 줄였습니다. 또한 관측 범위가 게이트웨이 한 곳에서 전 서비스로 확대되어, 시스템 전 구간의 병목과 자원 임계점을 선제적으로 탐지·방어할 수 있는 기반을 다졌습니다.</span></div>
+        </div>
+        </div>
+      </div>
+
+      <div class="sub">
+<p class="sub-title">MSA 백엔드 라이브러리 구축</p>
+<div class="par"><div class="par-row"><span class="par-label par-problem">문제</span><span class="par-body">서비스마다 예외 처리·로깅·HTTP 통신·이벤트 동기화를 별도로 구현해 처리 규격이 달라졌고, 공통 정책을 바꿀 때 각 저장소를 반복 수정해야 했습니다.</span></div><div class="par-row"><span class="par-label par-approach">접근</span><span class="par-body">공통 기능을 관심사별 모듈로 분리해 Spring Boot 자동 설정을 제공했습니다. 소비 서비스가 선택할 웹·JPA 의존성은 compileOnly로 전이를 제한하고, 모듈별 버전 관리와 GitHub Packages 개별 발행으로 독립 배포 구조를 구성했습니다.</span></div></div>
+<ul class="task-list"><li>기능별 모듈 분리 — 기본 엔티티·페이징, 예외 처리, 요청 컨텍스트·로깅, HTTP 클라이언트, 관측성, 권한 선언, 이벤트 동기화 등을 별도 모듈로 구성했습니다.</li><li>조건부 자동 설정 — Spring Boot 자동 설정으로 필터·클라이언트 등 공통 빈을 등록하되, 클래스패스·애플리케이션 유형·설정에 따라 적용 범위를 제한하고 서비스가 직접 선언한 빈을 우선하도록 했습니다.</li><li>전이 의존성 제어 — 웹·JPA 등 소비 서비스가 선택해야 하는 의존성은 compileOnly로 전이를 제한했습니다. 관측성 Starter와 Prometheus registry처럼 모듈 기능에 필요한 의존성은 의도적으로 제공해 모든 의존성을 일괄 차단하지 않았습니다.</li><li>운영 기능 공통화 — 계측된 RestClient와 다운스트림 오류 변환, Kafka 소비 설정, Inbox·Outbox 및 정합성 복구 구성 요소를 공통 모듈로 제공했습니다.</li><li>모듈별 배포 — GitHub Packages에 모듈별 버전으로 독립 발행합니다. 루트 전체 발행은 차단하고 모듈을 지정하도록 해 변경·배포 범위를 명시했습니다.</li></ul>
+<div class="par"><div class="par-row"><span class="par-label par-result">결과</span><span class="par-body">13개 서비스의 예외 처리·HTTP 통신·이벤트 동기화 규격을 표준화했습니다. 각 서비스는 필요한 모듈과 버전을 선택해 적용하고, 공통 기능의 변경은 해당 모듈에서 관리하도록 했습니다.</span></div></div>
+</div>
+
+      <p class="theme-label">품질 · 배포</p>
+
+      <div class="sub">
+        <p class="sub-title">서비스별 자동화 테스트 (유닛 + 통합)</p>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-problem">문제</span><span class="par-body">서비스가 분리되면서 각 마이크로서비스가 물리 DB(MySQL·PostgreSQL·MongoDB)·Redis·Kafka 같은 외부 실인프라에 의존하는 비중이 커졌습니다. Mock 기반 단위 테스트만으로는 실제 DB의 트랜잭션 격리 수준, Kafka 토픽의 발행·소비 타이밍, 중복 소비 예외처럼 런타임 환경에서만 드러나는 회귀 버그를 감지하지 못하는 한계가 있었습니다.</span></div>
+        </div>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-approach">접근</span><span class="par-body">실인프라를 실제로 띄운 통합 테스트를 자동화하고, 컨테이너 재사용과 비동기 검증 안정화로 속도·신뢰성을 함께 확보했습니다.</span></div>
+        </div>
+        
+        <div class="tail">
+          <ul class="task-list">
+          <li>TestContainers 기반 실인프라 테스트 자동화 — 로컬·개발 환경의 빌드 단계에서 실제 MySQL·PostgreSQL·MongoDB·Redis·Kafka를 Docker 컨테이너로 직접 구동해, 실환경과 동일한 조건에서 격리된 통합 테스트가 수행되도록 구축했습니다. 배포 파이프라인에서는 제외(<code>-x test</code>)했습니다 — 러너가 <code>docker.sock</code>을 마운트한 컨테이너라 테스트 컨테이너가 호스트의 형제로 떠서, <code>HostPortWaitStrategy</code>가 러너 내부 <code>localhost</code>에 붙지 못해 실패했습니다. 원인 규명 후 배포는 빌드·배포만 담당하도록 분리했고, 머지 전 CI 단계로 옮기는 것이 남은 과제입니다.</li>
+          <li>컨텍스트 재사용을 통한 빌드 속도 최적화 — 테스트 클래스마다 컨테이너가 매번 기동돼 빌드가 느려지는 것을 막기 위해, 통합 테스트를 공통 추상 베이스 클래스로 묶고 컨테이너를 <code>@ServiceConnection</code> 빈으로 등록했습니다. 동일한 <code>@SpringBootTest</code> 구성을 공유하도록 해 스프링 컨텍스트 캐싱이 적용되면서, 컨테이너가 전체 테스트 주기 동안 한 번만 기동·재사용되도록 최적화했습니다.</li>
+          <li>비동기 이벤트 검증 안정화 — Kafka 소비 같은 비동기 구간 테스트가 타이밍 이슈로 깨지는(Flaky) 현상을 막기 위해, <code>Thread.sleep</code> 고정 대기 대신 Awaitility로 Inbox 테이블 적재 시점까지 폴링 대기하도록 검증 로직을 고도화했습니다.</li>
+        </ul>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-result">결과</span><span class="par-body">팀과 함께 12개 서비스에 약 900개의 단위·통합 테스트를 구축했습니다. 생산 15개 공정과 비동기 이벤트 복구 시나리오를 실제 인프라를 사용해 검증하는 기반을 마련했으며, 배포 파이프라인의 테스트 제외와 머지 전 CI 연계 과제는 위와 같이 구분해 관리했습니다.</span></div>
+        </div>
+        </div>
+      </div>
+
+      <div class="sub">
+        <p class="sub-title">무중단 배포 파이프라인(GitHub Actions · Blue-Green)</p>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-problem">문제</span><span class="par-body">기존 사내 Gitea 환경과 수동 SSH 배포 방식은 표준화된 파이프라인이 없어 배포 시마다 작업자의 수동 공수가 컸고, 새 버전을 배포할 때마다 서비스가 일시적으로 중단되는 다운타임(Downtime)이 발생했습니다. 또한 배포 도중 에러가 발생했을 때 즉각적이고 안전하게 이전 버전으로 복구(Rollback)할 수 있는 안전장치가 부재했습니다.</span></div>
+        </div>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-approach">접근</span><span class="par-body">배포 인프라를 GitHub로 이전하고 공용 워크플로우로 표준화한 뒤, Blue-Green 무중단 전환과 자동 롤백으로 배포 안정성을 확보했습니다.</span></div>
+        </div>
+        
+        <div class="tail">
+          <ul class="task-list">
+          <li>배포 인프라 이전 및 표준화 — 기존 Gitea 저장소를 GitHub로 마이그레이션하고 GitHub Actions를 도입했습니다. 여러 마이크로서비스가 배포 템플릿을 중복 선언하지 않도록 공용 워크플로우(Reusable Workflows)를 설계해, 각 서비스는 이름과 승인 여부 등 최소한의 세팅만 지정하면 빌드부터 배포까지 자동으로 수행되도록 표준화했습니다.</li>
+          <li>안전한 Blue-Green 무중단 전환 설계 — 새 버전 인스턴스가 완전히 기동되고 정상 작동하는지 API 게이트웨이(Nginx·Consul)의 헬스체크로 먼저 검증한 뒤 트래픽을 점진적으로 전환하는 무중단 배포 아키텍처를 구축했습니다.</li>
+          <li>실패 시 자동 롤백 및 Graceful Stop 구현 — 헬스체크 단계에서 실패가 감지되면 즉시 배포를 중단하고 기존 인스턴스로 트래픽을 안전하게 유지하는 자동 롤백(Auto-Rollback) 스크립트를 적용했습니다. 배포 성공 시에는 기존 인스턴스에서 처리 중이던 남은 요청이 정상적으로 처리된 뒤 종료되도록 Graceful Stop을 보장했습니다.</li>
+        </ul>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-result">결과</span><span class="par-body">12개 서비스의 배포를 공용 파이프라인으로 통일하고, 승인 후 Blue-Green 전환·헬스체크·실패 시 기존 인스턴스 유지까지 자동화했습니다. 배포 1회 소요 시간은 약 4~5분입니다.</span></div>
+        </div>
+        </div>
+      </div>
+
+      <div class="chip-wrap tech-line">
+        <span class="chip">Spring Boot 4 · Java 25</span>
+        <span class="chip">WebFlux · Spring Cloud Gateway</span>
+        <span class="chip">Spring Batch</span>
+        <span class="chip">Kafka · Debezium CDC</span>
+        <span class="chip">Consul</span>
+        <span class="chip">Redis · Caffeine</span>
+        <span class="chip">MySQL</span>
+        <span class="chip">PostgreSQL</span>
+        <span class="chip">MongoDB</span>
+        <span class="chip">ELK · Prometheus · Grafana</span>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- ── 사이드 프로젝트 ── -->
+  <section id="side">
+    <p class="section-title">사이드 프로젝트 · 회사 업무와 별개</p>
+
+    <!-- ══ PickBit — 실시간 중고 경매 플랫폼 ══ -->
+    <div class="project">
+      <div class="project-header">
+        <span class="project-title">PickBit</span>
+        <span class="project-period">2026.01 – 2026.05</span>
+      </div>
+      <p class="project-overview">
+        실시간 중고 경매 플랫폼. 팀 프로젝트(FE 1 · BE 1)에서 백엔드를 단독으로 맡았습니다. 동시 입찰과 인스턴스 확장을 처음부터 상정해 8개 서비스 MSA로 설계했고, 다수 사용자가 같은 자원을 두고 경쟁할 때의 정합성을 주로 다뤘습니다.
+        <a href="https://github.com/pickbit-dev" target="_blank" rel="noopener noreferrer" class="portfolio-link">github.com/pickbit-dev</a>
+      </p>
+
+      <div class="sub">
+        <p class="sub-title">입찰 동시성 제어</p>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-problem">문제</span><span class="par-body">인기 경매에는 마감 직전 입찰이 한꺼번에 몰립니다. 현재가를 읽고 비교한 뒤 갱신하는 사이에 다른 입찰이 끼어들면, 더 낮은 금액이 최고가로 남거나 같은 금액이 둘 다 받아들여지는 상태가 됐습니다.</span></div>
+          <div class="par-row"><span class="par-label par-approach">접근</span><span class="par-body">경매 전체를 잠그면 인기 없는 경매까지 같이 느려지므로, 잠그는 단위를 경매 하나로 좁혔습니다.</span></div>
+        </div>
+        
+        <div class="tail">
+          <ul class="task-list">
+          <li>경매별 분산 락 — Redisson 분산 락의 키를 경매 ID로 잡아 같은 경매의 입찰만 한 줄로 세우고, 서로 다른 경매는 그대로 병렬 처리되게 했습니다.</li>
+          <li>락 구간 최소화 — 락 안에서는 현재가 비교와 갱신만 하고, 알림 발송·이력 적재처럼 실패해도 입찰 결과를 바꾸지 않는 작업은 락 밖으로 뺐습니다.</li>
+        </ul>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-result">결과</span><span class="par-body">Gatling으로 사용자 3,650명이 동일 경매의 입찰 API를 동시에 호출하는 부하 테스트를 수행했습니다. 해당 테스트의 전체 요청 응답 시간은 p95 28ms였습니다.</span></div>
+        </div>
+        </div>
+      </div>
+
+      <div class="sub">
+        <p class="sub-title">다중 인스턴스 확장 대응</p>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-problem">문제</span><span class="par-body">인스턴스 확장 시 두 가지 문제가 발생했습니다. WebSocket 연결이 인스턴스마다 따로 유지돼 다른 인스턴스에 붙은 사용자에게는 입찰 갱신이 전파되지 않았고, 경매 마감 배치가 모든 인스턴스에서 동시에 돌아 같은 경매를 여러 번 마감했습니다.</span></div>
+          <div class="par-row"><span class="par-label par-approach">접근</span><span class="par-body">전파는 공유 채널을 거치게 하고, 배치는 한 대만 실행하도록 각각 다른 방식으로 풀었습니다.</span></div>
+        </div>
+        
+        <div class="tail">
+          <ul class="task-list">
+          <li>Redis Pub/Sub WebSocket 브리지 — 입찰 갱신을 Redis 채널로 발행하고 각 인스턴스가 구독해 자기에게 붙은 세션으로만 밀어주도록 해, 인스턴스 수와 무관하게 전파가 유지되게 했습니다.</li>
+          <li>마감 배치 단일 실행 — ShedLock으로 마감 스케줄러에 잠금을 걸어, 여러 인스턴스가 같은 시각에 깨어나도 실제 마감은 한 대에서만 수행되도록 했습니다.</li>
+        </ul>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-result">결과</span><span class="par-body">3개 인스턴스 테스트에서 입찰 갱신의 실시간 전파를 확인했고, 중복 마감은 발생하지 않았습니다.</span></div>
+        </div>
+        </div>
+      </div>
+
+      <div class="sub">
+        <p class="sub-title">낙찰~결제·정산 서비스 연동 (Outbox · CDC)</p>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-problem">문제</span><span class="par-body">낙찰·결제·알림이 서로 다른 서비스라, 낙찰을 저장한 뒤 결제 요청을 따로 보내야 했습니다. 저장은 됐는데 발송이 실패하면 결제 요청이 조용히 사라지고, 반대로 발송 후 저장이 롤백되면 없는 낙찰에 결제가 걸렸습니다.</span></div>
+          <div class="par-row"><span class="par-label par-approach">접근</span><span class="par-body">저장과 발송을 둘 다 하는 구조 자체를 없애고, 트랜잭션 안에서는 DB에만 쓰도록 바꿨습니다.</span></div>
+        </div>
+        
+        <div class="tail">
+          <ul class="task-list">
+          <li>Outbox 기록 — 낙찰 트랜잭션 안에서 낙찰 결과와 발행할 이벤트를 Outbox 테이블에 같이 커밋하고, 애플리케이션은 브로커를 직접 호출하지 않게 했습니다.</li>
+          <li>CDC 발행 — Debezium이 Outbox 테이블의 변경을 감지해 Kafka로 발행하고, 결제·정산·알림 서비스가 각자 구독하도록 분리했습니다.</li>
+        </ul>
+        <div class="par">
+          <div class="par-row"><span class="par-label par-result">결과</span><span class="par-body">8개 서비스의 연동에서 애플리케이션이 DB 저장과 브로커 발행을 별도로 수행하던 실패 지점을 제거했습니다. 낙찰과 Outbox 이벤트는 함께 커밋·롤백되며, 커밋된 이벤트의 전달은 CDC·Kafka 파이프라인이 담당합니다.</span></div>
+        </div>
+        </div>
+      </div>
+
+      <div class="chip-wrap tech-line">
+        <span class="chip">Spring Boot</span>
+        <span class="chip">Kafka · Debezium CDC</span>
+        <span class="chip">Redis · Redisson</span>
+        <span class="chip">WebSocket</span>
+        <span class="chip">Spring Batch · ShedLock</span>
+        <span class="chip">Gatling</span>
+      </div>
+    </div>
+
+  </section>
+
+</div>
+</body>
+</html>
